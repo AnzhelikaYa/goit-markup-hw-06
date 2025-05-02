@@ -31,21 +31,28 @@
             <li><a href="" class="header-nav-link">Portfolio</a></li>
             <li><a href="" class="header-nav-link">Contacts</a></li>
           </ul>
+          <address class="address-style">
+            <ul class="address-item">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="address-link address-tab"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="address-link address-tab"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
         </nav>
-        <address class="address-style">
-          <ul class="address-item">
-            <li>
-              <a href="mailto:info@devstudio.com" class="address-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+110001111111" class="address-link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -54,7 +61,9 @@
       <section class="main-page section">
         <div class="container">
           <h1 class="main-page-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="all-button">Order Service</button>
+          <button type="button" class="all-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -360,7 +369,7 @@
               </div>
 
               <div class="box-portf">
-                <h3 class="desc-page">Banking App</h3>
+                <h3 class="desc-page-p">Banking App</h3>
                 <p class="desc">App</p>
               </div>
             </li>
@@ -381,7 +390,7 @@
               </div>
 
               <div class="box-portf">
-                <h3 class="desc-page">Cashless Payment</h3>
+                <h3 class="desc-page-p">Cashless Payment</h3>
                 <p class="desc">Marketing</p>
               </div>
             </li>
@@ -402,7 +411,7 @@
               </div>
 
               <div class="box-portf">
-                <h3 class="desc-page">Meditation App</h3>
+                <h3 class="desc-page-p">Meditation App</h3>
                 <p class="desc">App</p>
               </div>
             </li>
@@ -423,7 +432,7 @@
               </div>
 
               <div class="box-portf">
-                <h3 class="desc-page">Taxi Service</h3>
+                <h3 class="desc-page-p">Taxi Service</h3>
                 <p class="desc">Marketing</p>
               </div>
             </li>
@@ -444,7 +453,7 @@
               </div>
 
               <div class="box-portf">
-                <h3 class="desc-page">Screen Illustrations</h3>
+                <h3 class="desc-page-p">Screen Illustrations</h3>
                 <p class="desc">Design</p>
               </div>
             </li>
@@ -465,7 +474,7 @@
               </div>
 
               <div class="box-portf">
-                <h3 class="desc-page">Online Courses</h3>
+                <h3 class="desc-page-p">Online Courses</h3>
                 <p class="desc">Marketing</p>
               </div>
             </li>
@@ -537,7 +546,7 @@
         </div>
 
         <div class="footer-form-box">
-          <p class="footer-social">Subscribe</p>
+          <p class="footer-social-subsc">Subscribe</p>
           <form class="form-footer">
             <label class="title-footer-form">
               <input
@@ -550,7 +559,7 @@
             <button type="submit" class="btn-tg">
               Subscribe
               <svg class="icon-footer-tg" width="24" height="24">
-                <use href="./images/icons.svg#icon-Frame-telegram"></use>
+                <use href="./images/icons.svg#icon-frame-tg"></use>
               </svg>
             </button>
           </form>
@@ -634,7 +643,7 @@
             <label for="user-privacy" class="agreement">
               <span class="icon-agree">
                 <svg class="" width="10" height="8">
-                  <use href="./images/icons.svg#icon-Property-click"></use>
+                  <use href="./images/icons.svg#icon-property-click"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
@@ -645,5 +654,7 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
