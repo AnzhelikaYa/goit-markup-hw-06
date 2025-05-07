@@ -177,6 +177,16 @@ a {
     gap: 40px;
     margin-bottom: 168px;
 }
+.mob-nav{
+    font-weight: 700;
+    font-size: 36px;
+
+    /* line-height: 40px; */
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .mob-nav-link{
     font-weight: 700;
     font-size: 36px;
@@ -190,6 +200,22 @@ a {
 .mob-nav-link:hover
 .mob-nav-link:focus{
     color: #404bbf;
+}
+
+.address-style-mob {
+    font-style: normal;
+}
+
+
+.mob-address{
+    font-weight: 500;
+    font-size: 20px;
+
+    /* line-height: 24px; */
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #4d5ae5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-address-link{
     font-weight: 500;
@@ -388,7 +414,7 @@ a {
 }
 @media screen and (min-width: 1158px) {
     .main-page {
-        width: 1158px;
+        width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/hero-desk.jpg);
     }
@@ -582,7 +608,7 @@ a {
 
 .item {
     display: flex;
-    gap: 24px;
+    row-gap: 72px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -650,6 +676,15 @@ a {
 .social-link:focus {
     background-color: #404bbf;
 }
+
+@media screen and (min-width: 768px){
+
+.item{
+column-gap: 24px;
+row-gap: 64px;
+}   
+}
+
 
 /* Portfolio */
 
